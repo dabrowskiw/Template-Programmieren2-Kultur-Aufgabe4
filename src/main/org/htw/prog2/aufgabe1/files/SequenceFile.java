@@ -24,8 +24,4 @@ public class SequenceFile implements SiteclassificationFile {
     public String getFirstSequence() {
         return firstSeq;
     }
-
-    public boolean containsSequence(String sequence) {
-        return seqs.contains(sequence);
-    }
 }
