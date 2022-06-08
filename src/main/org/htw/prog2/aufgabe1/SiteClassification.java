@@ -49,11 +49,7 @@ public class SiteClassification {
     }
 
     public static void main(String[] args) {
-        if(args.length == 0) {
-            SiteClassificationGUI gui = new SiteClassificationGUI();
-            gui.setVisible(true);
-        }
-        else {
+
             CommandLine cli = parseOptions(args);
             if (cli == null) {
                 System.exit(1);
@@ -86,5 +82,5 @@ public class SiteClassification {
                 System.out.println("Fehler beim Einlesen einer der Dateien: " + e.getMessage());
             }
         }
-    }
+    
 }
